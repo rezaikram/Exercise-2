@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Form siswa</title>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css">
+    <style>
+        body {
+            background-color: hsl(258, 66%, 37%);
+        }
+        .container {
+            max-width: 800px;
+            margin: 40px auto;
+            padding: 20px;
+            background-color: #fff;
+            border: 1px solid #ddd;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+        }
+        .navbar {
+            background-color: #333;
+            color: #fff;
+            padding: 10px;
+            text-align: center;
+        }
+        .navbar a {
+            color: #fff;
+            text-decoration: none;
+        }
+        .accordion {
+            margin-bottom: 20px;
+        }
+        .accordion .card {
+            margin-bottom: 10px;
+        }
+    </style>
+</head>
+<body>
+    <nav class="navbar">
+        <a href="#">Home</a>
+        <a href="#">About</a>
+        <a href="#">Contact</a>
+    </nav>
+    <div class="container">
+        <h2>Form Sekreatif</h2>
+        <form>
+            <div class="form-group">
+                <label for="nama">Nama:</label>
+                <input type="text" id="nama" class="form-control">
+            </div>
+            <div class="form-group">
+                <label for="jenis_kelamin">Jenis Kelamin:</label>
+                <div class="form-check">
+                    <input type="radio" id="laki_laki" name="jenis_kelamin" value="Laki-laki">
+                    <label for="laki_laki">Laki-laki</label>
+                </div>
+                <div class="form-check">
+                    <input type="radio" id="perempuan" name="jenis_kelamin" value="Perempuan">
+                    <label for="perempuan">Perempuan</label>
+                </div>
+            </div>
+            <div class="form-group">
+                <label for="hobi">Hobi:</label>
+                <div class="form-check">
+                    <input type="checkbox" id="tari" name="hobi" value="Olahraga">
+                    <label for="olahraga">Tari</label>
+                </div>
+                <div class="form-check">
+                    <input type="checkbox" id="membaca" name="hobi" value="Membaca">
+                    <label for="membaca">Membaca</label>
+                </div>
+                <div class="form-check">
+                    <input type="checkbox" id="kesenian" name="hobi" value="Olahraga">
+                    <label for="olahraga">Kesenian</label>
+                </div>
+                <div class="form-check">
+                    <input type="checkbox" id="renang" name="hobi" value="Olahraga">
+                    <label for="olahraga">Renang</label>
+                </div>
+                <div class="form-check">
+                    <input type="checkbox" id="bulutangkis" name="hobi" value="Olahraga">
+                    <label for="olahraga">Bulutangkis</label>
+                </div>
+            </div>
+            <button type="submit" class="btn btn-primary">Submit</button>
+            <button type="button" class="btn btn-secondary" id="button-js">Button JS</button>
+        </form>
+        <img src="/High School Musical — MARK HOFELING DESIGN.jpeg" alt="Image" width="80%">
+        <p>KAMI MEMBANTU SISWA YANG MEMILIKI KETERTARIKAN DALAM BIDANG OLAHRAGA 
+            DAN AKAN MEMBANTU SERTA MEMBERIKAN FASILITAS TERBAIK
+        </p>
+        <div class="accordion" id="accordionExample">
+            <div class="card">
+                <div class="card-header" id="headingOne">
+                    <h2 class="mb-0">
+                        <button class="btn btn-link" type="button" data-toggle="collapse" data-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
+                            Data Siswa
+                        </button>
+                    </h2>
+                </div>
+                <div id="collapseOne" class="collapse show" aria-labelledby="headingOne" data-parent="#accordionExample">
+                    <div class="card-body">
+                        Silahkan isi form yang telah tersedia terlebihdahulu
+                    </div>
+                </div>
+            </div>
